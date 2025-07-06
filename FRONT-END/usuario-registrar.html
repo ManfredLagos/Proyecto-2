@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" id="txtNombre" required>
+        </div>
+
+
+        <div>
+            <label for="txtApellidos">Apellidos:</label>
+            <input type="text" id="txtApellidos" required>
+        </div>
+
+
+        <div>
+            <label for="txtCorreo">Correo:</label>
+            <input type="mail" id="txtCorreo" required>
+        </div>
+
+        <div>
+            <label for="txtUsuario">Usuario:</label>
+            <input type="text" id="txtUsuario" required>
+        </div>
+
+        <div>
+            <label for="txtContrasenia">Contraseña:</label>
+            <input type="password" id="txtContrasenia" required>
+        </div>
+
+        <div>
+            <label for="txtRol">Rol:</label>
+            <select name="rol" id="txtRol" required>
+                <option value="administrador">Administrador</option>
+                <option value="profesor">Profesor</option>
+                <option value="padre" selected>Padre</option>
+            </select>
+        </div>
+
+
+        <div>
+            <button type="button" id="btnGuardar">Guardar</button>
+        </div>
+    </form>
+
+    <script src="JS/usuario-registrar.js"></script>
+
+</body>
+</html>
