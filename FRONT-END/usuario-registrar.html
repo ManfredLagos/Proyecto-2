@@ -5,51 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static/css/usuario-registrar.css">
 </head>
 
 <body>
-    <form>
+    <header>
         <div>
-            <label for="txtNombre">Nombre:</label>
-            <input type="text" id="txtNombre" required>
+            <h1>Ministario de Educación Pública</h1>
         </div>
 
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Sobre nosotros</a>
+            <a href="">Contacto</a>
+            <a href="">Ingresar</a>
+        </nav>
+    </header>
 
-        <div>
-            <label for="txtApellidos">Apellidos:</label>
-            <input type="text" id="txtApellidos" required>
-        </div>
+    <div class="contenedor">
+        <form>
+            <h1>
+                Registro
+            </h1>
+            <div>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" placeholder="Nombre" required>
+            </div>
 
+            <div>
+                <label for="txtApellidos">Apellidos:</label>
+                <input type="text" id="txtApellidos" placeholder="Apellidos" required>
+            </div>
 
-        <div>
-            <label for="txtCorreo">Correo:</label>
-            <input type="mail" id="txtCorreo" required>
-        </div>
+            <div>
+                <label for="txtCorreo">Correo:</label>
+                <input type="mail" id="txtCorreo" placeholder="Correo" required>
+            </div>
 
-        <div>
-            <label for="txtUsuario">Usuario:</label>
-            <input type="text" id="txtUsuario" required>
-        </div>
+            <div>
+                <label for="txtUsuario">Usuario:</label>
+                <input type="text" id="txtUsuario" placeholder="Usuario" required>
+            </div>
 
-        <div>
-            <label for="txtContrasenia">Contraseña:</label>
-            <input type="password" id="txtContrasenia" required>
-        </div>
+            <div>
+                <label for="txtContrasenia">Contraseña:</label>
+                <input type="password" id="txtContrasenia" placeholder="Contraseña" required>
+            </div>
 
-        <div>
-            <label for="txtRol">Rol:</label>
-            <select name="rol" id="txtRol" required>
-                <option value="administrador">Administrador</option>
-                <option value="profesor">Profesor</option>
-                <option value="padre" selected>Padre</option>
-            </select>
-        </div>
+            <div class="contenedor_botton">
+                <button type="button" id="btnGuardar">Registrar</button>
+                <a href="">Volver</a>
+            </div>
+        </form>
+    </div>
 
-
-        <div>
-            <button type="button" id="btnGuardar">Guardar</button>
-        </div>
-    </form>
+    <footer>
+        <p>@2025 Ministario de Educación Pública. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="JS/usuario-registrar.js"></script>
 
