@@ -1,0 +1,43 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-dashboar-administrador{
+    padding: 0;
+    margin: 0;
+}
+
+#fila{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+#columna-1{
+    background-color: blue;
+}
+
+#columna-2{
+    background-color: rgb(171, 201, 163);
+}
+
+#menuLateral a{
+    text-decoration: none;
+}
+
+#menuLateral img{
+    width: 40px;
+    height: 15px;
+}
+
+
+

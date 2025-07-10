@@ -16,8 +16,10 @@ async function cargarTabla() {
                 <td> ${usuario_mep.apellidos} </td>
                 <td> ${usuario_mep.correo} </td>
                 <td> ${usuario_mep.usuario} </td>
-                <td> ${usuario_mep.contrasenia} </td>
                 <td> ${usuario_mep.rol} </td>
+                <td> Activo </td>
+                <td> <button>Editar</button> </td>
+
             `;
             tablaUsuarios_mep.appendChild(fila); //Agregar la fila creada en la tabla
         })

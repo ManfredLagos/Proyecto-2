@@ -1,3 +1,5 @@
+
+
 const inputNombre = document.getElementById("txtNombre");
 const inputApellidos = document.getElementById("txtApellidos");
 const inputCorreo = document.getElementById("txtCorreo");
@@ -30,7 +32,7 @@ function registrarUsuario(){
         correo : inputCorreo.value,
         usuario : inputUsuario.value,
         contrasenia : inputContrasenia.value,
-        rol : inputRol.value
+        rol : "padre"
     }
 
     fetch("http://localhost:3000/usuario_mep", {

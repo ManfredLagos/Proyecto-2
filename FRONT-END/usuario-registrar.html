@@ -10,7 +10,8 @@
 
 <body>
     <header>
-        <div>
+        <div style="display: flex;">
+            <img class="imgMep" src="static/images/images (1).png" alt="Logo mep">
             <h1>Ministario de Educación Pública</h1>
         </div>
 
@@ -24,34 +25,33 @@
 
     <div class="contenedor">
         <form>
-            <h1>
-                Registro
-            </h1>
-            <div>
-                <label for="txtNombre">Nombre:</label>
-                <input type="text" id="txtNombre" placeholder="Nombre" required>
-            </div>
+            <h1>Registro</h1>
+            <div class="contenedorInputs">
+                <div>
+                    <label for="txtNombre">Nombre:</label>
+                    <input style="margin-left: 26px;" type="text" id="txtNombre" placeholder="Nombre" required>
+                </div>
 
-            <div>
-                <label for="txtApellidos">Apellidos:</label>
-                <input type="text" id="txtApellidos" placeholder="Apellidos" required>
-            </div>
+                <div>
+                    <label for="txtApellidos">Apellidos:</label>
+                    <input style="margin-left: 18px;" type="text" id="txtApellidos" placeholder="Apellidos" required>
+                </div>
 
-            <div>
-                <label for="txtCorreo">Correo:</label>
-                <input type="mail" id="txtCorreo" placeholder="Correo" required>
-            </div>
+                <div>
+                    <label for="txtCorreo">Correo:</label>
+                    <input style="margin-left: 37px;" type="mail" id="txtCorreo" placeholder="Correo" required>
+                </div>
 
-            <div>
-                <label for="txtUsuario">Usuario:</label>
-                <input type="text" id="txtUsuario" placeholder="Usuario" required>
-            </div>
+                <div>
+                    <label for="txtUsuario">Usuario:</label>
+                    <input style="margin-left: 32px;" type="text" id="txtUsuario" placeholder="Usuario" required>
+                </div>
 
-            <div>
-                <label for="txtContrasenia">Contraseña:</label>
-                <input type="password" id="txtContrasenia" placeholder="Contraseña" required>
+                <div>
+                    <label for="txtContrasenia">Contraseña:</label>
+                    <input style="margin-left: 5px;" type="password" id="txtContrasenia" placeholder="Contraseña" required>
+                </div>
             </div>
-
             <div class="contenedor_botton">
                 <button type="button" id="btnGuardar">Registrar</button>
                 <a href="">Volver</a>
