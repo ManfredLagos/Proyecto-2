@@ -23,7 +23,7 @@ module.exports = router;
 // GET: Solicitar datos al servidor (listar usuarios)
 router.get("/", async(req, res) => {
     try {
-        const usuarios_mep = await Usuario_mep.find();
+        const usuarios_mep = await Usuario_mep.find().populate("certificaciones");
         res.json(usuarios_mep);
     } catch (error) {
         res.status(500).json({msj: error.message});

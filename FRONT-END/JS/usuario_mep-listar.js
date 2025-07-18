@@ -11,6 +11,11 @@ async function cargarTabla() {
         tablaUsuarios_mep.innerHTML = ""; //Instrucción que limpia la tabla
         listaUsuarios_mep.forEach(usuario_mep => {
             const fila = document.createElement("tr");
+
+            let informacionCertificaciones = "";
+            usuario.certificaciones.forEach(certificacion => {
+                informacionCertificaciones += certificacion.nombre + " - " + certificacion.institucion + "<br>";
+            });
             fila.innerHTML= `
                 <td> ${usuario_mep.nombre} </td>
                 <td> ${usuario_mep.apellidos} </td>
@@ -18,6 +23,7 @@ async function cargarTabla() {
                 <td> ${usuario_mep.usuario} </td>
                 <td> ${usuario_mep.contrasenia} </td>
                 <td> ${usuario_mep.rol} </td>
+                <td> ${informacionCertificaciones} </td>
             `;
             tablaUsuarios_mep.appendChild(fila); //Agregar la fila creada en la tabla
         })
