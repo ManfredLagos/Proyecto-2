@@ -130,3 +130,12 @@ footer{
     width: 50px;
     padding-top: 5px;
 }
+
+.input-error{
+    border: 2px solid #ff3636;
+}
+
+.input-error::placeholder {
+  color: #ff3636;
+  opacity: 1; /* Asegura que el placeholder sea visible en todos los navegadores */
+}
