@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const schemaUtiles = new mongoose.Schema({
+const schemaLista_utiles = new mongoose.Schema({
     nombre: {
         type: String,
         required: true,
@@ -11,18 +11,19 @@ const schemaUtiles = new mongoose.Schema({
         required: true,
         unique: false
     },
-    cantidad: {
-        type: Number,
-        required: true,
-        unique: false
-    },
-    lista: [
+    utiles: [
         {
             type: Schema.Types.ObjectId,
-            ref:"Lista"
+            ref:"Utiles"
+        }
+    ],
+    grado: [
+        {
+            type: Schema.Types.ObjectId,
+            ref:"Grado"
         }
     ]
 });
 
-const Utiles = mongoose.model("Utiles", schemaUtiles);
-module.exports = Utiles;
+const Lista_utiles = mongoose.model("Utiles", schemaLista_utiles);
+module.exports = Lista_utiles;

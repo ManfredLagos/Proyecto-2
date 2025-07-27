@@ -11,17 +11,11 @@ const schemaUtiles = new mongoose.Schema({
         required: true,
         unique: false
     },
-    cantidad: {
-        type: Number,
+    grado: {
+        type:Number,
         required: true,
         unique: false
-    },
-    lista: [
-        {
-            type: Schema.Types.ObjectId,
-            ref:"Lista"
-        }
-    ]
+    }
 });
 
 const Utiles = mongoose.model("Utiles", schemaUtiles);
