@@ -14,6 +14,8 @@ const usuarioRoute = require("./routes/usuario.route")
 const productoRoute = require("./routes/producto.route")
 const usuario_mepRoute = require("./routes/usuario_mep.route")
 const utilesRoute = require("./routes/utiles.route")
+const lista_utilesRoute = require("./routes/lista-utiles.route")
+const gradoRoute = require("./routes/grado.route")
 
 app.use(express.json());//Habilita el manejo de JSON en las peticiones
 app.use(bodyParser.urlencoded({extended:true}));
@@ -31,7 +33,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 app.use("/usuarios", usuarioRoute)
 app.use("/productos", productoRoute)
 app.use("/usuario_mep", usuario_mepRoute)
-app.use("/utiles",  utilesRoute)
+app.use("/utiles", utilesRoute)
+app.use("/lista-utiles", lista_utilesRoute)
+app.use("/grado", gradoRoute)
 
 app.get('/', (req,res)=> {
     res.send('Servidor en funcionamiento');

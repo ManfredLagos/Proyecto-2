@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+const Schema = mongoose.Schema;
+
 const schemaLista_utiles = new mongoose.Schema({
     nombre: {
         type: String,
@@ -25,5 +27,5 @@ const schemaLista_utiles = new mongoose.Schema({
     ]
 });
 
-const Lista_utiles = mongoose.model("Utiles", schemaLista_utiles);
+const Lista_utiles = mongoose.model("Lista_utiles", schemaLista_utiles);
 module.exports = Lista_utiles;

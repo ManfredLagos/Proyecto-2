@@ -1,28 +1,25 @@
 const express = require("express");
 const router = express.Router();
-const Util = require("../models/utiles.model");
-
-// Ruta POST
+const Grado = require("../models/grado.model");
 
 router.post("/", async(req, res) => {
-    const{nombre, descripcion, cantidad} = req.body;
-    if (!nombre || !descripcion || !cantidad){
+    const{nombre, descripcion, grado} = req.body;
+    if (!nombre || !descripcion || !grado){
         return res.status(400).json({msj: "Todos los campos son obligatorios"});
     }
     try{
-        const nuevoUtil = new Util({nombre, descripcion, cantidad});
-        await nuevoUtil.save()
-        res.status(201).json(nuevoUtil);
+        const nuevoGrado = new Grado({nombre, descripcion, grado});
+        await nuevoGrado.save()
+        res.status(201).json(nuevoGrado);
     } catch(error){
         res.status(400).json({msj: error.message});
     }
 });
 
-// GET: Solicitar datos al servidor (listar usuarios)
 router.get("/", async(req, res) => {
     try {
-        const utiles = await Util.find();
-        res.json(utiles);
+        const grados = await Grado.find();
+        res.json(grados);
     } catch (error) {
         res.status(500).json({msj: error.message});
     }

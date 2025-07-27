@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const schemaUtiles = new mongoose.Schema({
+const schemaGrado = new mongoose.Schema({
     nombre: {
         type: String,
         required: true,
@@ -18,5 +18,5 @@ const schemaUtiles = new mongoose.Schema({
     }
 });
 
-const Utiles = mongoose.model("Utiles", schemaUtiles);
-module.exports = Utiles;
+const Grado = mongoose.model("Grado", schemaGrado);
+module.exports = Grado;
